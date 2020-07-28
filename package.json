@@ -1,0 +1,25 @@
+{
+  "name": "100daysofcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlhamAtsaris/100-Days-Of-Code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlhamAtsaris/100-Days-Of-Code/issues"
+  },
+  "homepage": "https://github.com/IlhamAtsaris/100-Days-Of-Code#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {}
+}
