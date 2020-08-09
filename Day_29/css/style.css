@@ -40,12 +40,12 @@ body {
     font-weight: 400;
 }
 
-.features h3, .designer h3 {
+.features h3, .designer h3, .similar-product h3, .cart-header h3, .checkout-modal-succes h3 {
     font-family: Lora;
     font-weight: 600;
     color: #1B2690;
 }
-.features p, .designer p, footer p {
+.features p, .designer p, footer p  , .similar-product p , .cart-header p, .checkout-modal-succes p{
     font-weight: 300;
     color: #B7B7B7;
 }
@@ -151,5 +151,41 @@ body {
     color: #868686;
     font-size: 14px;
     line-height: 28px;
-    
 }
+
+.product-review {
+    height: 300px;  
+    overflow: scroll;
+    width: auto;
+}
+.product-review h5 {
+    font-size: 18px !important;
+    margin: 0;
+}
+
+.product-review p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.similar-product {
+    margin-top: 180px;
+    margin-bottom: 100px;
+
+}
+
+.similar-product .figure h4 {
+    font-size: 22px;
+    color: #171717;
+}
+
+.cart-header {
+    margin-top: 50px;
+}
+
+.checkout-detail{
+    background-color: #F6F7FB;
+    border: 1px solid #EAEAEA;
+    color: #171717;
+}
+
