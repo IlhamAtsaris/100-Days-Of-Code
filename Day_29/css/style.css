@@ -40,12 +40,12 @@ body {
     font-weight: 400;
 }
 
-.features h3, .designer h3, .similar-product h3, .cart-header h3, .checkout-modal-succes h3 {
+.features h3, .designer h3, .similar-product h3, .cart-header h3, .checkout-modal-succes h3, .category h3 {
     font-family: Lora;
     font-weight: 600;
     color: #1B2690;
 }
-.features p, .designer p, footer p  , .similar-product p , .cart-header p, .checkout-modal-succes p{
+.features p, .designer p, footer p  , .similar-product p , .cart-header p, .checkout-modal-succes p, .category p {
     font-weight: 300;
     color: #B7B7B7;
 }
@@ -189,3 +189,6 @@ body {
     color: #171717;
 }
 
+.category {
+    margin-top: 80px;
+}
