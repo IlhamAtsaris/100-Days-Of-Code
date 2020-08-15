@@ -44,7 +44,7 @@ $menu =  $menu["menu"];
             <div class="row">
                 <?php foreach ($menu as $row) : ?>
                     <div class="col-md-4">
-                    <div class="card mt-3">
+                        <div class="card mt-3">
                         <img src="img/pizza/<?= $row["gambar"]; ?>"  class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title"><?= $row["nama"]; ?></h5>
