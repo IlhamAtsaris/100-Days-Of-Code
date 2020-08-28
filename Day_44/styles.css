@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.navbar .row p {
+    font-size: 14px;
+}
+
+.navbar {
+    background-color: white !important;
+    box-shadow: 2px 5px 40px 2px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-con {
+    width: 635px;
+    height: 350px;
+    padding-top: 50px;
+
+}
