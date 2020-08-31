@@ -11,6 +11,8 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="/styles.css" />
 
+
+
   <title>Pusat Informasi & Koordinasi Covid-19 Provinsi Banten</title>
 </head>
 
@@ -57,7 +59,7 @@
   <header>
     <div class="container px-0">
       <div class="row">
-        <div class="col-12 col-sm-12 col-md-10 col-lg-6 mt-5">
+        <div class="d-block col-lg-6 mt-5">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -85,7 +87,7 @@
             </a>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-10 col-lg-6 mt-5 ">
+        <div class="d-block col-lg-6 mt-5 ">
           <div class="card">
             <div class="card-body">
               <div class="row">
@@ -149,34 +151,31 @@
   <!-- Akhir Header -->
 
 
+
+
   <!-- Data Kasus -->
 
   <section class="data-kasus">
     <div class="container">
       <div class="row">
         <div class="col text-center ">
-          <h2>Sebaran Kasus <span class="text-danger">COVID-19</span> Di banten</h2>
-          <p> Update terakhir: <span class="font-weight-bold">selasa, 25 agustus 2020</span> Sumber Data :
-            <span class="font-weight-bold">data.covid19.go.id </span></p>
+          <h2>Sebaran Kasus <span class="text-danger">COVID-19</span> Di <span class="provinsi"></span></h2>
+          <p> Update terakhir: <span id="datetime" class="font-weight-bold"> </span> Sumber Data :
+            <span class="font-weight-bold">https://indonesia-covid-19.mathdro.id/api/provinsi/ </span></p>
         </div>
       </div>
       <div class="row mt-4">
-        <div class="col-lg-3 ">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 ml-lg-4 ">
           <div class="card">
             <div class="card-body merah">
               <h6 class="card-title text-center text-white">Total Terkonfirmasi</h6>
-              <h2 class="text-center text-white">1124</h2>
-              <div class="d-flex justify-content-center">
-                <div class="p-2"><img src="img/panah.png "></div>
-                <div class="pt-2">
-                  <h2 class="text-white">124</h2>
-                </div>
-              </div>
+              <h2 class="text-center text-white kasus-positif"></h2>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3">
+        <!-- <div class="col-lg-3">
           <div class="card">
             <div class="card-body">
               <h6 class="card-title text-warning text-center ">Isolasi/Dalam Perawatan</h6>
@@ -189,32 +188,22 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3">
+        </div> -->
+        <div class="col-lg-3 ml-lg-4 mt-3 mt-lg-0 ">
           <div class="card">
             <div class="card-body">
-              <h6 class="card-title text-center text-success ">Selesai Isolasi/Sembuh</h6>
-              <h2 class="text-center text-success ">1124</h2>
-              <div class="d-flex justify-content-center">
-                <div class="p-2"><img src="img/panah-hijau.png "></div>
-                <div class="pt-2">
-                  <h2 class="text-success">124</h2>
-                </div>
-              </div>
+              <h6 class="card-title text-center text-success ">Terkonfirmasi: Sembuh</h6>
+              <h2 class="text-center text-success selesai-sembuh"></h2>
+
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-3 ml-lg-4 mt-3 mt-lg-0">
           <div class="card">
             <div class="card-body">
-              <h6 class="card-title text-center text-danger">Meninggal</h6>
-              <h2 class="text-center text-danger">1124</h2>
-              <div class="d-flex justify-content-center">
-                <div class="p-2"><img src="img/panah-merah.png "></div>
-                <div class="pt-2">
-                  <h2 class="text-danger">124</h2>
-                </div>
-              </div>
+              <h6 class="card-title text-center text-danger">Terkonfirmasi: Meninggal</h6>
+              <h2 class="text-center text-danger kasus-meninggal"> </h2>
             </div>
           </div>
         </div>
@@ -226,6 +215,10 @@
     </div>
   </section>
   <!-- Akhir data Kasus -->
+
+
+
+
 
   <!-- Daftar Rumah Sakit -->
   <section class="rumah-sakit">
@@ -278,6 +271,9 @@
   <!-- Akhir Daftar Rumah Sakit -->
 
 
+
+
+
   <!-- Info-covid -->
   <article class="info-covid">
     <div class="container">
@@ -300,41 +296,119 @@
                 selengkapnya</button></a> </div>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
+      <div class="row m-0 py-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center">
+          <h3>Protokol Kesehatan Yang Harus Anda Patuhi</h3>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row m-0">
+        <div class="col-md-4">
+          <div class="card my-3 px-3 justify-content-center"
+            style="height: 250px;border-radius:20px;position:relative;border:none;">
+            <img class="img-fluid mb-3 d-none d-lg-block" src="img/rumah.svg" alt=""
+              style="height:auto;position: absolute;top:-20px;right:20px;">
+            <img class="img-fluid mb-3 d-lg-none" src="img/rumah.svg" alt=""
+              style="width:30%;height:auto;position: absolute;top:-10px;right:10px;">
+            <p><b>Tinggal Di Rumah</b></p>
+            <p>Tidak keluar bila tidak ada keperluan mendesak.</p>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="d-none d-lg-block">
+            <div class="card my-3 px-3 justify-content-center"
+              style="height: 250px;border-radius:20px;position:relative;border:none;">
+              <img class="img-fluid mb-3" src="img/masker.svg" alt=""
+                style="height:auto;position: absolute;top:-20px;right:20px;">
+              <p><b>Selalu Jalankan 3M</b></p>
+              <p></p>
+              <ul>
+                <li>Memakai masker dengan benar saat ke mana pun pergi</li>
+                <li>Mencuci tangan dengan sabun dan air mengalir secara rutin</li>
+                <li>Menjaga jarak aman 1,5 - 2 meter dengan orang lain</li>
+              </ul>
+              <p></p>
+            </div>
+          </div>
+          <div class="d-lg-none">
+            <div class="card my-3 px-3 justify-content-center"
+              style="height: 350px;border-radius:20px;position:relative;border:none;">
+              <img class="img-fluid mb-3" src="img/masker.svg" alt=""
+                style="width:30%;height:auto;position: absolute;top:-10px;right:10px;">
+              <p><b>Selalu Jalankan 3M</b></p>
+              <p></p>
+              <ul>
+                <li>Memakai masker dengan benar saat ke mana pun pergi</li>
+                <li>Mencuci tangan dengan sabun dan air mengalir secara rutin</li>
+                <li>Menjaga jarak aman 1,5 - 2 meter dengan orang lain</li>
+              </ul>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card my-3 px-3 justify-content-center"
+            style="height: 250px;border-radius:20px;position:relative;border:none;">
+            <img class="img-fluid mb-3 d-none d-lg-block" src="img/kantor.svg" alt=""
+              style="height:auto;position: absolute;top:-20px;right:20px;">
+            <img class="img-fluid mb-3 d-lg-none" src="img/kantor.svg" alt=""
+              style="width:30%;height:auto;position: absolute;top:-10px;right:10px;">
+            <p><b>Maksimal 50%</b></p>
+            <p>Seluruh kegiatan yang diizinkan beroperasi harus beroperasi dalam kapasitas maksimal 50% dan menjalankan
+              protokol kesehatan dengan ketat.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3 px-3 justify-content-center"
+            style="height: 250px;border-radius:20px;position:relative;border:none;">
+            <img class="img-fluid mb-3 d-none d-lg-block" src="https://corona.jakarta.go.id/img/logo/img-protokol-3.svg"
+              alt="" style="height:auto;position: absolute;top:-20px;right:20px;">
+            <img class="img-fluid mb-3 d-lg-none" src="https://corona.jakarta.go.id/img/logo/img-protokol-3.svg" alt=""
+              style="width:30%;height:auto;position: absolute;top:-10px;right:10px;">
+            <p><b>Ingatkan Sesama</b></p>
+            <p>Saling mengingatkan untuk menjalankan protokol kesehatan</p>
+          </div>
+        </div>
+      </div>
     </div>
     </articel>
+
     <!-- Info Corona -->
+
+
+
 
     <!-- Berita Banten -->
     <article class="berita">
       <div class="container">
+        <h4 class="mb-4">Berita Banten</h4>
+        <hr>
         <div class="row">
           <div class="col">
             <div class="card-deck">
               <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top m-0" src="img/pusat-sebaran.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Tangerang Jadi Pusat Sebaran Covid-19 di Banten</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                     additional content. This content is a little bit longer.</p>
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
               <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top m-0" src="img/Rsud-banten.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">RSUD Banten Khusus Diperuntukkan bagi Perawatan Pasien Covid-19 Corona</h5>
                   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
                   </p>
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
               <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top m-0" src="img/banten-meningkat.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Kasus Baru Positif Covid-19 di Banten Meningkat Hampir Tiga Kali Lipat</h5>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                     additional content. This card has even longer content than the first to show that equal height
                     action.</p>
@@ -349,6 +423,40 @@
     </article>
 
 
+    <!-- FAQ -->
+    <section class="pertanyaan">
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-md-1"></div>
+          <div class="col-md-5" style="align-self: center;">
+            <p style="font-size: 22px;">Ada</p>
+            <h3>Pertanyaan?</h3>
+            <p>Cari tahu pertanyaan yang sering muncul mengenai Covid-19.</p>
+            <div class="pb-5">
+              <a href="#" class="btn btn-success" target="_blank" rel="noopener noreferrer">Lihat FAQ</a>
+            </div>
+            <div class="d-lg-none" style="padding-bottom:120px;"></div>
+          </div>
+          <div class="col-md-6 text-center" style="align-self: center;position: relative;">
+            <div class="d-none d-lg-block" style="position: absolute;top:-150px;right:-10px;">
+              <img src="https://corona.jakarta.go.id/img/logo/bg-dot-3.svg" alt="">
+            </div>
+            <div class="d-none d-lg-block">
+              <img class="img-fluid mb-3" src="https://corona.jakarta.go.id/img/logo/img-faq.svg" alt=""
+                style="position: absolute;bottom:-200px;left:0px;">
+            </div>
+            <div class="d-lg-none">
+              <img class="img-fluid mb-3" src="https://corona.jakarta.go.id/img/logo/img-faq.svg" alt=""
+                style="position: absolute;width:80%;bottom:-60px;right:0px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/blue-wave 1.svg" class="img-fluid m-0">
+    </section>
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -360,6 +468,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="data.js"></script>
 </body>
 
 </html>
