@@ -157,16 +157,18 @@
 
   <section class="data-kasus">
     <div class="container">
-      <div class="row">
-        <div class="col text-center ">
-          <h2>Sebaran Kasus <span class="text-danger">COVID-19</span> Di <span class="provinsi"></span></h2>
-          <p> Update terakhir: <span id="datetime" class="font-weight-bold"> </span> Sumber Data :
+      <div class="row m-0 ">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center ">
+          <h2>Data Kasus <span class="text-danger">COVID-19</span> Di <span class="provinsi"></span></h2>
+          <p> Update terakhir: <span id="time" class="font-weight-bold"> </span> Sumber Data :
             <span class="font-weight-bold">https://indonesia-covid-19.mathdro.id/api/provinsi/ </span></p>
         </div>
+        <div class="col-md-2"></div>
       </div>
       <div class="row mt-4">
         <div class="col-lg-1"></div>
-        <div class="col-lg-3 ml-lg-4 ">
+        <div class="col-lg-3 mx-lg-2 ">
           <div class="card">
             <div class="card-body merah">
               <h6 class="card-title text-center text-white">Total Terkonfirmasi</h6>
@@ -189,7 +191,7 @@
             </div>
           </div>
         </div> -->
-        <div class="col-lg-3 ml-lg-4 mt-3 mt-lg-0 ">
+        <div class="col-lg-3 mx-lg-2 mt-3 mt-lg-0 ">
           <div class="card">
             <div class="card-body">
               <h6 class="card-title text-center text-success ">Terkonfirmasi: Sembuh</h6>
@@ -199,7 +201,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 ml-lg-4 mt-3 mt-lg-0">
+        <div class="col-lg-3 mx-lg-2 mt-3 mt-lg-0">
           <div class="card">
             <div class="card-body">
               <h6 class="card-title text-center text-danger">Terkonfirmasi: Meninggal</h6>
@@ -208,11 +210,64 @@
           </div>
         </div>
       </div>
+   
+    <div class="row m-0 pt-4">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 text-center">
+        <h2>Data Kasus <span class="text-danger">COVID-19</span> Se Indonesia</h2>
+        <p> Update terakhir: <span class="font-weight-bold datetime"> </span> Sumber Data :
+        <span class="font-weight-bold"> https://thevirustracker.com/indonesia-coronavirus-information-id </span></p>
+      </div>
+      <div class="col-md-2"></div>
     </div>
-    <div class="d-flex justify-content-center mt-3"> <a href="#"><button type="button"
-          class="btn btn-outline-danger btn-sm mt-3">Lihat
-          Data Selengkapnya</button></a> </div>
+    
+    <div class="row mt-3">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-3 ">
+        <div class="card">
+          <div class="card-body merah">
+            <h6 class="card-title text-white text-center ">Total Terkonfirmasi</h6>
+            <h2 class="text-center text-white cases"></h2>
+            <div class="d-flex justify-content-center">
+              <div class="p-2"><img src="img/panah.png "></div>
+              <div class="pt-2">
+                <h2 class="text-white kasus_baru" > </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="col-lg-3 mx-4">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="card-title text-success text-center ">Terkonfirmasi: Sembuh</h6>
+          <h2 class="text-center text-success sembuh" ></h2>
+          <div class="d-flex justify-content-center">
+            <div class="p-2"><img src="img/panah-hijau.png "></div>
+            <div class="pt-2">
+              <h2 class="text-success">124</h2>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="col-lg-3">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="card-title text-danger text-center ">Terkonfirmasi: Meninggal</h6>
+          <h2 class="text-center text-danger meninggal"></h2>
+          <div class="d-flex justify-content-center">
+            <div class="p-2"><img src="img/panah-merah.png "></div>
+            <div class="pt-2">
+              <h2 class="text-danger baru"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>  
   </section>
   <!-- Akhir data Kasus -->
 
