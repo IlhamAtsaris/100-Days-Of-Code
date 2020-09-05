@@ -31,16 +31,13 @@
             <a class="nav-link text-dark" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Data</a>
+            <a class="nav-link text-dark" href="#data-kasus">Data</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Rs Rujukan</a>
+            <a class="nav-link text-dark" href="#daftar-rumah-sakit">Rs Rujukan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Kolaborasi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Bantuan Sosial</a>
+            <a class="nav-link text-dark" href="#protokol-kesehatan">Protokol Kesehatan</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-dark" href="#">Deteksi Mandiri</a>
@@ -154,7 +151,7 @@
 
 
   <!-- Data Kasus -->
-
+  <div id="data-kasus"> </div>
   <section class="data-kasus">
     <div class="container">
       <div class="row m-0 ">
@@ -176,21 +173,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="col-lg-3">
-          <div class="card">
-            <div class="card-body">
-              <h6 class="card-title text-warning text-center ">Isolasi/Dalam Perawatan</h6>
-              <h2 class="text-center text-warning">1124</h2>
-              <div class="d-flex justify-content-center">
-                <div class="p-2"><img src="img/panah-kuning.png "></div>
-                <div class="pt-2">
-                  <h2 class="text-warning">124</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="col-lg-3 mx-lg-2 mt-3 mt-lg-0 ">
           <div class="card">
             <div class="card-body">
@@ -210,65 +192,66 @@
           </div>
         </div>
       </div>
-   
-    <div class="row m-0 pt-4">
-      <div class="col-md-2"></div>
-      <div class="col-md-8 text-center">
-        <h2>Data Kasus <span class="text-danger">COVID-19</span> Se Indonesia</h2>
-        <p> Update terakhir: <span class="font-weight-bold datetime"> </span> Sumber Data :
-        <span class="font-weight-bold"> https://thevirustracker.com/indonesia-coronavirus-information-id </span></p>
+
+      <div class="row m-0 pt-4">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center">
+          <h2>Data Kasus <span class="text-danger">COVID-19</span> Se Indonesia</h2>
+          <p> Update terakhir: <span class="font-weight-bold datetime"> </span> Sumber Data :
+            <span class="font-weight-bold"> https://thevirustracker.com/indonesia-coronavirus-information-id </span>
+          </p>
+        </div>
+        <div class="col-md-2"></div>
       </div>
-      <div class="col-md-2"></div>
-    </div>
-    
-    <div class="row mt-3">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-3 ">
-        <div class="card">
-          <div class="card-body merah">
-            <h6 class="card-title text-white text-center ">Total Terkonfirmasi</h6>
-            <h2 class="text-center text-white cases"></h2>
-            <div class="d-flex justify-content-center">
-              <div class="p-2"><img src="img/panah.png "></div>
-              <div class="pt-2">
-                <h2 class="text-white kasus_baru" > </h2>
+
+      <div class="row mt-3">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 ">
+          <div class="card">
+            <div class="card-body merah">
+              <h6 class="card-title text-white text-center ">Total Terkonfirmasi</h6>
+              <h2 class="text-center text-white cases"></h2>
+              <div class="d-flex justify-content-center">
+                <div class="p-2"><img src="img/panah.png "></div>
+                <div class="pt-2">
+                  <h2 class="text-white kasus_baru"> </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mx-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title text-success text-center ">Terkonfirmasi: Sembuh</h6>
+              <h2 class="text-center text-success sembuh"></h2>
+              <div class="d-flex justify-content-center">
+                <div class="p-2 "><img src="img/panah-hijau.png "></div>
+                <div class="pt-2">
+                  <h2 class="text-success">124</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title text-danger text-center ">Terkonfirmasi: Meninggal</h6>
+              <h2 class="text-center text-danger meninggal"></h2>
+              <div class="d-flex justify-content-center">
+                <div class="p-2"><img src="img/panah-merah.png "></div>
+                <div class="pt-2">
+                  <h2 class="text-danger baru"></h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    <div class="col-lg-3 mx-4">
-      <div class="card">
-        <div class="card-body">
-          <h6 class="card-title text-success text-center ">Terkonfirmasi: Sembuh</h6>
-          <h2 class="text-center text-success sembuh" ></h2>
-          <div class="d-flex justify-content-center">
-            <div class="p-2"><img src="img/panah-hijau.png "></div>
-            <div class="pt-2">
-              <h2 class="text-success">124</h2>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="col-lg-3">
-      <div class="card">
-        <div class="card-body">
-          <h6 class="card-title text-danger text-center ">Terkonfirmasi: Meninggal</h6>
-          <h2 class="text-center text-danger meninggal"></h2>
-          <div class="d-flex justify-content-center">
-            <div class="p-2"><img src="img/panah-merah.png "></div>
-            <div class="pt-2">
-              <h2 class="text-danger baru"></h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  </div>  
   </section>
+
   <!-- Akhir data Kasus -->
 
 
@@ -276,6 +259,7 @@
 
 
   <!-- Daftar Rumah Sakit -->
+  <div id="daftar-rumah-sakit"> </div>
   <section class="rumah-sakit">
     <div class="container">
       <div class="row">
@@ -323,6 +307,7 @@
       </div>
     </div>
   </section>
+
   <!-- Akhir Daftar Rumah Sakit -->
 
 
@@ -330,9 +315,10 @@
 
 
   <!-- Info-covid -->
+  <div></div>
   <article class="info-covid">
     <div class="container">
-      <div class="row">
+      <div class="row" id="protokol-kesehatan">
         <div class="col">
           <h1>Wujudkan Banten</h1>
           <h1><span>Sehat, Aman& Produktif</span></h1>
@@ -509,6 +495,7 @@
       </div>
       <img src="img/blue-wave 1.svg" class="img-fluid m-0">
     </section>
+    <!-- Akhir FAQ -->
 
 
 
@@ -524,6 +511,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <script src="data.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

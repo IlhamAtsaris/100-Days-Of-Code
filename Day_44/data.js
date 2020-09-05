@@ -13,10 +13,6 @@ fetch("https://indonesia-covid-19.mathdro.id/api/provinsi/")
     document.querySelector(".kasus-meninggal").innerHTML = meninggal;
   });
 
-const dt = new Date();
-document.querySelector(".datetime").innerHTML = dt.toLocaleDateString();
-document.getElementById("time").innerHTML = dt.toLocaleDateString();
-
 fetch("https://api.thevirustracker.com/free-api?countryTotal=ID")
   .then((response) => response.json())
   .then((response) => {

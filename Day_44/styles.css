@@ -58,7 +58,17 @@ h2 {
 }
 
 .merah {
-    background-color: #FF5E57;
+    animation: pulse 30s infinite;
+}
+
+@keyframes pulse {
+    10% {
+        background-color: #c0392b;
+    }
+
+    100% {
+        background-color: #FF4136;
+    }
 }
 
 header {
@@ -88,4 +98,8 @@ h1 span {
 
 .pertanyaan {
     margin-top: 130px;
+}
+
+#protokol-kesehatan {
+    margin-top: 50px;
 }
