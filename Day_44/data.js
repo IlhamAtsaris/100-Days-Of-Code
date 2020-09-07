@@ -22,7 +22,6 @@ fetch("https://api.thevirustracker.com/free-api?countryTotal=ID")
     const total_death = data[0].total_deaths;
     const new_cases = data[0].total_new_cases_today;
     const new_death = data[0].total_new_deaths_today;
-    const aktif = data[0].total_active_cases;
 
     document.querySelector(".cases").innerHTML = total_cases;
     document.querySelector(".kasus_baru").innerHTML = new_cases;
