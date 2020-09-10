@@ -28,4 +28,38 @@ fetch("https://api.thevirustracker.com/free-api?countryTotal=ID")
     document.querySelector(".sembuh").innerHTML = total_sembuh;
     document.querySelector(".meninggal").innerHTML = total_death;
     document.querySelector(".baru").innerHTML = new_death;
+  })
+  .catch((error) => {
+    alert(error);
   });
+
+fetch(
+  "http://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=77f6f07d2af34d22b0e3c00f65c85587"
+)
+  .then((response) => {
+    return response.json();
+  })
+  .then((responseJson) => {
+    console.log(responseJson);
+  });
+// let cards = "";
+// data.forEach((a) => {
+//   cards += ` <div class="card">
+//               <img class="card-img-top m-0" src="img/pusat-sebaran.jpg" alt="Card image cap" />
+//               <div class="card-body">
+//                 <h5 class="card-title">
+//                   Tangerang Jadi Pusat Sebaran Covid-19 di Banten
+//                 </h5>
+//                 <p class="card-text">
+//                   This is a longer card with supporting text below as a
+//                   natural lead-in to additional content. This content is a
+//                   little bit longer.
+//                 </p>
+//                 <p class="card-text">
+//                   <small class="text-muted">Last updated 3 mins ago</small>
+//                 </p>
+//               </div>
+//             </div>`;
+
+//   document.querySelector(".article-container").innerHTML = cards;
+// });
