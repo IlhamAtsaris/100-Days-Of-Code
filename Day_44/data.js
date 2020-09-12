@@ -33,6 +33,8 @@ fetch("https://api.thevirustracker.com/free-api?countryTotal=ID")
     alert(error);
   });
 
+/// Berita
+
 fetch(
   "http://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=77f6f07d2af34d22b0e3c00f65c85587"
 )
@@ -40,26 +42,26 @@ fetch(
     return response.json();
   })
   .then((responseJson) => {
-    console.log(responseJson);
-  });
-// let cards = "";
-// data.forEach((a) => {
-//   cards += ` <div class="card">
-//               <img class="card-img-top m-0" src="img/pusat-sebaran.jpg" alt="Card image cap" />
-//               <div class="card-body">
-//                 <h5 class="card-title">
-//                   Tangerang Jadi Pusat Sebaran Covid-19 di Banten
-//                 </h5>
-//                 <p class="card-text">
-//                   This is a longer card with supporting text below as a
-//                   natural lead-in to additional content. This content is a
-//                   little bit longer.
-//                 </p>
-//                 <p class="card-text">
-//                   <small class="text-muted">Last updated 3 mins ago</small>
-//                 </p>
-//               </div>
-//             </div>`;
+    const data = responseJson.articles;
+    let cards = "";
+    data.forEach(function (m) {
+      const corona = m.title.includes("Corona");
 
-//   document.querySelector(".article-container").innerHTML = cards;
-// });
+      if (corona) {
+        cards += `<div class="col-md-4 my-5">
+          <div class="card">
+          <img class="card-img-top" src="${m.urlToImage}">
+          <div class="card-body">
+          <h5 class="card-title">${m.title}</h5>
+          <p>${m.description}<P>
+          <a href="${m.url}" target="_blank"  class="btn btn-outline-success btn-sm">Baca Selengkapnya</a>
+          </div>
+          </div>
+          </div>`;
+      } else {
+      }
+    });
+
+    const beritacontainer = document.querySelector(".berita-container");
+    beritacontainer.innerHTML = cards;
+  });

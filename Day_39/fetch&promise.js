@@ -40,7 +40,8 @@ searchButton.addEventListener("click", function () {
     .then((response) => response.json())
     .then((response) => {
       const movies = response.Search;
-      let cards = "";
+      console.log(movies);
+      let cards = " ";
       movies.forEach((m) => (cards += showCards(m)));
       const movieContainer = document.querySelector("#movie-container");
       movieContainer.innerHTML = cards;
