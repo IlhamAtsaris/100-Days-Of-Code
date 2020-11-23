@@ -1,64 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Pusat Informasi & Koordinasi Covid-19 Provinsi Banten</title>
-  </head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
 
-  <body>
-    <!-- Nav bar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <div class="d-flex">
-            <img src="/img/logo.svg" />
-            <div class="flex-column ml-3 m-0">
-              <p class="mb-0 mt-1 font-weight-bold">Pusat Informasi Covid-19</p>
-              <p class="mb-0 mt-1">Provinsi Banten</p>
+  <title>Pusat Informasi & Koordinasi Covid-19 Provinsi Banten</title>
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="d-flex">
+          <img src="/img/logo.svg" />
+          <div class="flex-column ml-3 m-0">
+            <p class="mb-0 mt-1 font-weight-bold">Pusat Informasi Covid-19</p>
+            <p class="mb-0 mt-1">Provinsi Banten</p>
+          </div>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Rs Rujukan </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Protocol Kesehatan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Berita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Akhir Nav Bar -->
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="d-block col-lg-6 mt-5">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/carousel2.jpeg" alt="First slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/carousel.jpeg" alt="Second slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/corousel1.jpeg" alt="third slide" />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="d-block col-lg-6 mt-5">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-8 col-8">
+                  <h6 class="card-title mb-1 text-secondary">
+                    Ikuti Perkembangan terkini seputar Covid-19 dengan
+                    mengikuti kanal social media kami
+                  </h6>
+                </div>
+                <div class="col-lg-2 col-2 mt-3">
+                  <a href="#">
+                    <img src="img/instagram-brands 1.png" alt="" /></a>
+                </div>
+                <div class="col-lg-1 col-1 mt-3">
+                  <a href="#"> <img src="img/twitter.png" alt="" /></a>
+                </div>
+              </div>
             </div>
           </div>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 mt-3">
+              <div class="card">
+                <a href="tel:119">
+                  <div class="card-body call">
+                    <h6 class="card-title mb-1">Call Center</h6>
+                    <p class="card-text mb-2">Nomor Darurat</p>
+                    <div class="row">
+                      <div class="col-1">
+                        <img src="img/phone-alt-solid 1.svg" alt="" />
+                      </div>
+                      <div class="col">
+                        <h5 class="text-success">119</h5>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 mt-3">
+              <div class="card">
+                <a href="#">
+                  <div class="card-body call">
+                    <h6 class="card-title mb-0">Hotline Pikoban</h6>
+                    <p class="card-text mt-0 mt-md-1">Seputar COVID</p>
+                    <div class="row">
+                      <div class="col-1">
+                        <img src="img/whatsapp-brands 1.svg" />
+                      </div>
+                      <div class="col m-0">
+                        <h6 class="text-success m-0">Klik Chat</h6>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Akhir Header -->
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+  <!-- Data Kasus -->
+  <div id="data-kasus"></div>
+  <section class="data-kasus">
+    <div class="container">
+      <div class="row m-0">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center">
+          <h2>
+            Data Kasus <span class="text-danger">COVID-19</span> Di
+            <span class="provinsi"></span>
+          </h2>
+          <p>
+            Update terakhir:
+            <span id="time" class="font-weight-bold"> </span> Sumber Data :
+            <span class="font-weight-bold">https://indonesia-covid-19.mathdro.id/api/provinsi/
+            </span>
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row mt-4 mt-lg-2 data-card">
+        <div class="col-lg-1 mx-4"></div>
+        <div class="col-lg-3">
+          <div class="card mx-4 mx-sm-5 mx-lg-0">
+            <div class="card-body merah">
+              <h6 class="card-title text-center text-white">
+                Total Terkonfirmasi
+              </h6>
+              <h2 class="text-center text-white kasus-positif"></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mt-3 mt-lg-0">
+          <div class="card mx-4 mx-sm-5 mx-lg-0">
+            <div class="card-body">
+              <h6 class="card-title text-center text-success">
+                Selesai Isolasi/Sembuh
+              </h6>
+              <h2 class="text-center text-success selesai-sembuh"></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mt-3 mt-lg-0">
+          <div class="card mx-4 mx-sm-5 mx-lg-0">
+            <div class="card-body">
+              <h6 class="card-title text-center text-danger">
+                Total Meninggal
+              </h6>
+              <h2 class="text-center text-danger kasus-meninggal"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row m-0 pt-4">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center">
+          <h2>
+            Data Kasus <span class="text-danger">COVID-19</span> Se Indonesia
+          </h2>
+          <p>
+            Update terakhir:
+            <span class="font-weight-bold datetime"> </span> Sumber Data :
+            <span class="font-weight-bold">
+              https://thevirustracker.com/indonesia-coronavirus-information-id
+            </span>
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row data-card">
+        <div class="col-lg-1 mx-4"></div>
+        <div class="col-lg-3 mt-2">
+          <div class="card mx-3 mx-sm-5 mx-lg-0">
+            <div class="card-body merah">
+              <h6 class="card-title text-white text-center">
+                Total Terkonfirmasi
+              </h6>
+              <h2 class="text-center text-white cases"></h2>
+              <div class="d-flex justify-content-center">
+                <div class="p-2 panah"><img src="img/panah.png " /></div>
+                <div class="pt-2">
+                  <h2 class="text-white kasus_baru"></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mt-2">
+          <div class="card mx-3 mx-sm-5 mx-lg-0">
+            <div class="card-body">
+              <h6 class="card-title text-success text-center">
+                Selesai Isolasi/Sembuh
+              </h6>
+              <h2 class="text-center text-success sembuh"></h2>
+              <div class="d-flex justify-content-center">
+                <div class="p-2"><img src="img/panah-hijau.png " /></div>
+                <div class="pt-2">
+                  <h2 class="text-success">124</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 mt-2">
+          <div class="card mx-3 mx-sm-5 mx-lg-0">
+            <div class="card-body">
+              <h6 class="card-title text-danger text-center">
+                Total meninggal
+              </h6>
+              <h2 class="text-center text-danger meninggal"></h2>
+              <div class="d-flex justify-content-center">
+                <div class="p-2"><img src="img/panah-merah.png " /></div>
+                <div class="pt-2">
+                  <h2 class="text-danger baru"></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Akhir data Kasus -->
+
+  <!-- Daftar Rumah Sakit -->
+  <div id="daftar-rumah-sakit"></div>
+  <section class="rumah-sakit">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 mb-5">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title mt-3">
+                Daftar Rumah Sakit Rujukan Di Banten
+              </h5>
+              <p class="card-text mt-3">
+                Berikut ini adalah rumah sakit yang menjadi rujukan untuk
+                pasien dengan status Pasien dalam Pengawasan. Anda harus
+                mengunjungi fasilitas kesehatan terdekat terlebih dahulu
+                seperti klinik/rumah sakit umum sebelum akhirnya dapat dirujuk
+                ke rumah sakit khusus di bawah ini.
+              </p>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6>RSUD Banten</h6>
+                  <p>Jalan Syeh Nawawi Al Bantani, cipocok Jaya Serang</p>
+                  <a href="tel:8490911" class="bg-info mt-n4">(0254) 8490911</a>
+                  <a href="https://rsud.bantenprov.go.id" class="bg-success"
+                    target="_blank">https://rsud.bantenprov.go.id</a>
+                </div>
+                <div class="col-lg-4 mt-3 mt-sm-3 mt-md-3 mt-lg-0">
+                  <h6>RSUD Balaraja</h6>
+                  <p>Jalan Rumah Sakit Umum No. 1, Kotabaru Serang</p>
+                  <a href="tel:29508250" class="bg-info mt-n4">(021) 29508250</a>
+                  <a href="http://www.rsudbalaraja.com/" class="bg-success"
+                    target="_blank">http://www.rsudbalaraja.com/</a>
+                </div>
+                <div class="col-lg-4 mt-3 mt-sm-3 mt-md-3 mt-lg-0">
+                  <h6>RSUD Kabupaten Tangerang</h6>
+                  <p>Jalan Jend.Ahmad Yani No.9, Sukaasih,Tangerang</p>
+                  <div class="col-lg-12">
+                    <a href="082112971403" class="bg-info mt-n4">082112971403</a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="https://rsud-tangerangkab.id/" class="bg-success"
+                      target="_blank">https://rsud-tangerangkab.id/</a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="#"><button type="button" class="btn btn-outline-success btn-sm mt-3">
+                    Lihat Rumah Sakit Lainnya
+                  </button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Akhir Daftar Rumah Sakit -->
+
+  <!-- Info-covid -->
+  <article class="info-covid">
+    <div class="container">
+      <div class="row" id="protokol-kesehatan">
+        <div class="col-8">
+          <h1>Wujudkan Banten</h1>
+          <h1><span>Sehat, Aman& Produktif</span></h1>
+        </div>
+        <div class="col-4"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 d-block mt-5">
+          <img src="img/batuk2.svg" width="40%" />
+        </div>
+        <div class="col-lg-6 d-block mt-5">
+          <h3>Waspada Penularan Covid-19</h3>
+          <p>
+            SARS-CoV-2 penyebab Covid-19 menyebar melalui kontak dengan
+            droplet saluran napas penderita yang dihasilkan pada saat bicara,
+            batuk, atau bersin. Droplet dapat bertahan di udara dalam beberapa
+            waktu tertentu dan sampai jarak tertentu.
+          </p>
+          <div class="d-flex">
+            <a href="#"><button type="button" class="btn btn-outline-success btn-sm">
+                Lihat selengkapnya
+              </button></a>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 py-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center">
+          <h3>Protokol Kesehatan Yang Harus Anda Patuhi</h3>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row m-0">
+        <div class="col-md-4">
+          <div class="card my-3 px-3 justify-content-center" style="
+                height: 250px;
+                border-radius: 10px;
+                position: relative;
+                border: none;
+              ">
+            <img class="img-fluid mb-3 d-none d-lg-block" src="img/rumah.svg" alt="" style="
+                  height: auto;
+                  position: absolute;
+                  top: -20px;
+                  right: 20px;
+                " />
+            <img class="img-fluid mb-3 d-lg-none" src="img/rumah.svg" alt="" style="
+                  width: 30%;
+                  height: auto;
+                  position: absolute;
+                  top: -10px;
+                  right: 10px;
+                " />
+            <p><b>Tinggal Di Rumah</b></p>
+            <p>Tidak keluar bila tidak ada keperluan mendesak.</p>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="d-none d-lg-block">
+            <div class="card my-3 px-3 justify-content-center" style="
+                  height: 250px;
+                  border-radius: 10px;
+                  position: relative;
+                  border: none;
+                ">
+              <img class="img-fluid mb-3" src="img/masker.svg" alt="" style="
+                    height: auto;
+                    position: absolute;
+                    top: -20px;
+                    right: 20px;
+                  " />
+              <p><b>Selalu Jalankan 3M</b></p>
+              <p></p>
+              <ul>
+                <li>Memakai masker dengan benar saat ke mana pun pergi</li>
+                <li>
+                  Mencuci tangan dengan sabun dan air mengalir secara rutin
+                </li>
+                <li>Menjaga jarak aman 1,5 - 2 meter dengan orang lain</li>
+              </ul>
+              <p></p>
+            </div>
+          </div>
+          <div class="d-lg-none">
+            <div class="card my-3 px-3 justify-content-center" style="
+                  height: 350px;
+                  border-radius: 10px;
+                  position: relative;
+                  border: none;
+                ">
+              <img class="img-fluid mb-3" src="img/masker.svg" alt="" style="
+                    width: 30%;
+                    height: auto;
+                    position: absolute;
+                    top: -10px;
+                    right: 10px;
+                  " />
+              <p><b>Selalu Jalankan 3M</b></p>
+              <p></p>
+              <ul>
+                <li>Memakai masker dengan benar saat ke mana pun pergi</li>
+                <li>
+                  Mencuci tangan dengan sabun dan air mengalir secara rutin
+                </li>
+                <li>Menjaga jarak aman 1,5 - 2 meter dengan orang lain</li>
+              </ul>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card my-3 px-3 justify-content-center" style="
+                height: 250px;
+                border-radius: 10px;
+                position: relative;
+                border: none;
+              ">
+            <img class="img-fluid mb-3 d-none d-lg-block" src="img/kantor.svg" alt="" style="
+                  height: auto;
+                  position: absolute;
+                  top: -20px;
+                  right: 20px;
+                " />
+            <img class="img-fluid mb-3 d-lg-none" src="img/kantor.svg" alt="" style="
+                  width: 30%;
+                  height: auto;
+                  position: absolute;
+                  top: -10px;
+                  right: 10px;
+                " />
+            <p><b>Maksimal 50%</b></p>
+            <p>
+              Seluruh kegiatan yang diizinkan beroperasi harus beroperasi
+              dalam kapasitas maksimal 50% dan menjalankan protokol kesehatan
+              dengan ketat.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3 px-3 justify-content-center" style="
+                height: 250px;
+                border-radius: 10px;
+                position: relative;
+                border: none;
+              ">
+            <img class="img-fluid mb-3 d-none d-lg-block" src="https://corona.jakarta.go.id/img/logo/img-protokol-3.svg"
+              alt="" style="
+                  height: auto;
+                  position: absolute;
+                  top: -20px;
+                  right: 20px;
+                " />
+            <img class="img-fluid mb-3 d-lg-none" src="https://corona.jakarta.go.id/img/logo/img-protokol-3.svg" alt=""
+              style="
+                  width: 30%;
+                  height: auto;
+                  position: absolute;
+                  top: -10px;
+                  right: 10px;
+                " />
+            <p><b>Ingatkan Sesama</b></p>
+            <p>Saling mengingatkan untuk menjalankan protokol kesehatan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Info Corona -->
+
+  <!-- Berita Banten -->
+  <article class="berita">
+    <div class="container">
+      <h4 class="mb-1">Berita Covid-19</h4>
+      <hr />
+      <div class="row berita-container"></div>
+    </div>
+  </article>
+
+  <!-- FAQ -->
+  <section class="pertanyaan">
+    <div class="container">
+      <div class="row m-0">
+        <div class="col-md-1"></div>
+        <div class="col-md-5" style="align-self: center">
+          <p style="font-size: 22px">Ada</p>
+          <h3>Pertanyaan?</h3>
+          <p>Cari tahu pertanyaan yang sering muncul mengenai Covid-19.</p>
+          <div class="pb-5">
+            <a href="#" class="btn btn-success" rel="noopener noreferrer">Lihat FAQ</a>
+          </div>
+          <div class="d-lg-none" style="padding-bottom: 120px"></div>
+        </div>
+        <div class="col-md-6 text-center" style="align-self: center; position: relative">
+          <div class="d-none d-lg-block" style="position: absolute; top: -150px; right: -10px">
+            <img src="https://corona.jakarta.go.id/img/logo/bg-dot-3.svg" alt="" />
+          </div>
+          <div class="d-none d-lg-block">
+            <img class="img-fluid mb-3" src="https://corona.jakarta.go.id/img/logo/img-faq.svg" alt=""
+              style="position: absolute; bottom: -200px; left: 0px" />
+          </div>
+          <div class="d-lg-none">
+            <img class="img-fluid mb-3" src="https://corona.jakarta.go.id/img/logo/img-faq.svg" alt="" style="
+                  position: absolute;
+                  width: 80%;
+                  bottom: -60px;
+                  right: 0px;
+                " />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="img/blue-wave 1.svg" class="m-0 p-0" width="100%" />
+  </section>
+  <!-- Akhir FAQ -->
+
+  <footer>
+    <div class="container">
+      <div class="row mt-3 mb-4">
+        <div class="col-3 col-md-2 my-auto ml-3">
+          <img src="./img/banten.svg" class="img-fluid" width="50%" />
+        </div>
+        <div class="col-2 col-md-2">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Data</a>
             </li>
+          </ul>
+        </div>
+        <div class="col-3 col-md-3">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#">Rs Rujukan </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Protocol Kesehatan</a>
             </li>
+          </ul>
+        </div>
+        <div class="col-3 col-md-3">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#">Berita Banten</a>
             </li>
@@ -67,725 +601,30 @@
             </li>
           </ul>
         </div>
+        <div class="col-0 col-md-2"></div>
       </div>
-    </nav>
-
-    <!-- Akhir Nav Bar -->
-
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="d-block col-lg-6 mt-5">
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="1"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="2"
-                ></li>
-              </ol>
-              <div class="carousel-inner rounded">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="img/carousel2.jpeg"
-                    alt="First slide"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="img/carousel.jpeg"
-                    alt="Second slide"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="img/corousel1.jpeg"
-                    alt="third slide"
-                  />
-                </div>
-              </div>
-              <a
-                class="carousel-control-prev"
-                href="#carouselExampleIndicators"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carouselExampleIndicators"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-          <div class="d-block col-lg-6 mt-5">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-lg-8 col-8">
-                    <h6 class="card-title mb-1 text-secondary">
-                      Ikuti Perkembangan terkini seputar Covid-19 dengan
-                      mengikuti kanal social media kami
-                    </h6>
-                  </div>
-                  <div class="col-lg-2 col-2 mt-3">
-                    <a href="#">
-                      <img src="img/instagram-brands 1.png" alt=""
-                    /></a>
-                  </div>
-                  <div class="col-lg-1 col-1 mt-3">
-                    <a href="#"> <img src="img/twitter.png" alt="" /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6 col-sm-6 col-md-6 col-lg-6 mt-3">
-                <div class="card">
-                  <a href="tel:119">
-                    <div class="card-body call">
-                      <h6 class="card-title mb-1">Call Center</h6>
-                      <p class="card-text mb-2">Nomor Darurat</p>
-                      <div class="row">
-                        <div class="col-1">
-                          <img src="img/phone-alt-solid 1.svg" alt="" />
-                        </div>
-                        <div class="col">
-                          <h5 class="text-success">119</h5>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-6 mt-3">
-                <div class="card">
-                  <a href="#">
-                    <div class="card-body call">
-                      <h6 class="card-title mb-0">Hotline Pikoban</h6>
-                      <p class="card-text mt-0 mt-md-1">Seputar COVID</p>
-                      <div class="row">
-                        <div class="col-1">
-                          <img src="img/whatsapp-brands 1.svg" />
-                        </div>
-                        <div class="col m-0">
-                          <h6 class="text-success m-0">Klik Chat</h6>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="row mt-4">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center">
+          <p>Dicodingsubmission&copy;2020BFFWD</p>
         </div>
+        <div class="col-md-2"></div>
       </div>
-    </header>
-    <!-- Akhir Header -->
+    </div>
+  </footer>
 
-    <!-- Data Kasus -->
-    <div id="data-kasus"></div>
-    <section class="data-kasus">
-      <div class="container">
-        <div class="row m-0">
-          <div class="col-md-2"></div>
-          <div class="col-md-8 text-center">
-            <h2>
-              Data Kasus <span class="text-danger">COVID-19</span> Di
-              <span class="provinsi"></span>
-            </h2>
-            <p>
-              Update terakhir:
-              <span id="time" class="font-weight-bold"> </span> Sumber Data :
-              <span class="font-weight-bold"
-                >https://indonesia-covid-19.mathdro.id/api/provinsi/
-              </span>
-            </p>
-          </div>
-          <div class="col-md-2"></div>
-        </div>
-        <div class="row mt-4 mt-lg-2 data-card">
-          <div class="col-lg-1 mx-4"></div>
-          <div class="col-lg-3">
-            <div class="card mx-4 mx-sm-5 mx-lg-0">
-              <div class="card-body merah">
-                <h6 class="card-title text-center text-white">
-                  Total Terkonfirmasi
-                </h6>
-                <h2 class="text-center text-white kasus-positif"></h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 mt-3 mt-lg-0">
-            <div class="card mx-4 mx-sm-5 mx-lg-0">
-              <div class="card-body">
-                <h6 class="card-title text-center text-success">
-                  Selesai Isolasi/Sembuh
-                </h6>
-                <h2 class="text-center text-success selesai-sembuh"></h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 mt-3 mt-lg-0">
-            <div class="card mx-4 mx-sm-5 mx-lg-0">
-              <div class="card-body">
-                <h6 class="card-title text-center text-danger">
-                  Total Meninggal
-                </h6>
-                <h2 class="text-center text-danger kasus-meninggal"></h2>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
 
-        <div class="row m-0 pt-4">
-          <div class="col-md-2"></div>
-          <div class="col-md-8 text-center">
-            <h2>
-              Data Kasus <span class="text-danger">COVID-19</span> Se Indonesia
-            </h2>
-            <p>
-              Update terakhir:
-              <span class="font-weight-bold datetime"> </span> Sumber Data :
-              <span class="font-weight-bold">
-                https://thevirustracker.com/indonesia-coronavirus-information-id
-              </span>
-            </p>
-          </div>
-          <div class="col-md-2"></div>
-        </div>
-
-        <div class="row data-card">
-          <div class="col-lg-1 mx-4"></div>
-          <div class="col-lg-3 mt-2">
-            <div class="card mx-3 mx-sm-5 mx-lg-0">
-              <div class="card-body merah">
-                <h6 class="card-title text-white text-center">
-                  Total Terkonfirmasi
-                </h6>
-                <h2 class="text-center text-white cases"></h2>
-                <div class="d-flex justify-content-center">
-                  <div class="p-2 panah"><img src="img/panah.png " /></div>
-                  <div class="pt-2">
-                    <h2 class="text-white kasus_baru"></h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 mt-2">
-            <div class="card mx-3 mx-sm-5 mx-lg-0">
-              <div class="card-body">
-                <h6 class="card-title text-success text-center">
-                  Selesai Isolasi/Sembuh
-                </h6>
-                <h2 class="text-center text-success sembuh"></h2>
-                <div class="d-flex justify-content-center">
-                  <div class="p-2"><img src="img/panah-hijau.png " /></div>
-                  <div class="pt-2">
-                    <h2 class="text-success">124</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 mt-2">
-            <div class="card mx-3 mx-sm-5 mx-lg-0">
-              <div class="card-body">
-                <h6 class="card-title text-danger text-center">
-                  Total meninggal
-                </h6>
-                <h2 class="text-center text-danger meninggal"></h2>
-                <div class="d-flex justify-content-center">
-                  <div class="p-2"><img src="img/panah-merah.png " /></div>
-                  <div class="pt-2">
-                    <h2 class="text-danger baru"></h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Akhir data Kasus -->
-
-    <!-- Daftar Rumah Sakit -->
-    <div id="daftar-rumah-sakit"></div>
-    <section class="rumah-sakit">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-1"></div>
-          <div class="col-lg-10 mb-5">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title mt-3">
-                  Daftar Rumah Sakit Rujukan Di Banten
-                </h5>
-                <p class="card-text mt-3">
-                  Berikut ini adalah rumah sakit yang menjadi rujukan untuk
-                  pasien dengan status Pasien dalam Pengawasan. Anda harus
-                  mengunjungi fasilitas kesehatan terdekat terlebih dahulu
-                  seperti klinik/rumah sakit umum sebelum akhirnya dapat dirujuk
-                  ke rumah sakit khusus di bawah ini.
-                </p>
-                <div class="row">
-                  <div class="col-lg-4">
-                    <h6>RSUD Banten</h6>
-                    <p>Jalan Syeh Nawawi Al Bantani, cipocok Jaya Serang</p>
-                    <a href="tel:8490911" class="bg-info mt-n4"
-                      >(0254) 8490911</a
-                    >
-                    <a
-                      href="https://rsud.bantenprov.go.id"
-                      class="bg-success"
-                      target="_blank"
-                      >https://rsud.bantenprov.go.id</a
-                    >
-                  </div>
-                  <div class="col-lg-4 mt-3 mt-sm-3 mt-md-3 mt-lg-0">
-                    <h6>RSUD Balaraja</h6>
-                    <p>Jalan Rumah Sakit Umum No. 1, Kotabaru Serang</p>
-                    <a href="tel:29508250" class="bg-info mt-n4"
-                      >(021) 29508250</a
-                    >
-                    <a
-                      href="http://www.rsudbalaraja.com/"
-                      class="bg-success"
-                      target="_blank"
-                      >http://www.rsudbalaraja.com/</a
-                    >
-                  </div>
-                  <div class="col-lg-4 mt-3 mt-sm-3 mt-md-3 mt-lg-0">
-                    <h6>RSUD Kabupaten Tangerang</h6>
-                    <p>Jalan Jend.Ahmad Yani No.9, Sukaasih,Tangerang</p>
-                    <div class="col-lg-12">
-                      <a href="082112971403" class="bg-info mt-n4"
-                        >082112971403</a
-                      >
-                    </div>
-                    <div class="col-lg-12">
-                      <a
-                        href="https://rsud-tangerangkab.id/"
-                        class="bg-success"
-                        target="_blank"
-                        >https://rsud-tangerangkab.id/</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <a href="#"
-                    ><button
-                      type="button"
-                      class="btn btn-outline-success btn-sm mt-3"
-                    >
-                      Lihat Rumah Sakit Lainnya
-                    </button></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-1"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Akhir Daftar Rumah Sakit -->
-
-    <!-- Info-covid -->
-    <article class="info-covid">
-      <div class="container">
-        <div class="row" id="protokol-kesehatan">
-          <div class="col-8">
-            <h1>Wujudkan Banten</h1>
-            <h1><span>Sehat, Aman& Produktif</span></h1>
-          </div>
-          <div class="col-4"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 d-block mt-5">
-            <img src="img/batuk2.svg" width="40%" />
-          </div>
-          <div class="col-lg-6 d-block mt-5">
-            <h3>Waspada Penularan Covid-19</h3>
-            <p>
-              SARS-CoV-2 penyebab Covid-19 menyebar melalui kontak dengan
-              droplet saluran napas penderita yang dihasilkan pada saat bicara,
-              batuk, atau bersin. Droplet dapat bertahan di udara dalam beberapa
-              waktu tertentu dan sampai jarak tertentu.
-            </p>
-            <div class="d-flex">
-              <a href="#"
-                ><button type="button" class="btn btn-outline-success btn-sm">
-                  Lihat selengkapnya
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row m-0 py-5">
-          <div class="col-md-2"></div>
-          <div class="col-md-8 text-center">
-            <h3>Protokol Kesehatan Yang Harus Anda Patuhi</h3>
-          </div>
-          <div class="col-md-2"></div>
-        </div>
-        <div class="row m-0">
-          <div class="col-md-4">
-            <div
-              class="card my-3 px-3 justify-content-center"
-              style="
-                height: 250px;
-                border-radius: 10px;
-                position: relative;
-                border: none;
-              "
-            >
-              <img
-                class="img-fluid mb-3 d-none d-lg-block"
-                src="img/rumah.svg"
-                alt=""
-                style="
-                  height: auto;
-                  position: absolute;
-                  top: -20px;
-                  right: 20px;
-                "
-              />
-              <img
-                class="img-fluid mb-3 d-lg-none"
-                src="img/rumah.svg"
-                alt=""
-                style="
-                  width: 30%;
-                  height: auto;
-                  position: absolute;
-                  top: -10px;
-                  right: 10px;
-                "
-              />
-              <p><b>Tinggal Di Rumah</b></p>
-              <p>Tidak keluar bila tidak ada keperluan mendesak.</p>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="d-none d-lg-block">
-              <div
-                class="card my-3 px-3 justify-content-center"
-                style="
-                  height: 250px;
-                  border-radius: 10px;
-                  position: relative;
-                  border: none;
-                "
-              >
-                <img
-                  class="img-fluid mb-3"
-                  src="img/masker.svg"
-                  alt=""
-                  style="
-                    height: auto;
-                    position: absolute;
-                    top: -20px;
-                    right: 20px;
-                  "
-                />
-                <p><b>Selalu Jalankan 3M</b></p>
-                <p></p>
-                <ul>
-                  <li>Memakai masker dengan benar saat ke mana pun pergi</li>
-                  <li>
-                    Mencuci tangan dengan sabun dan air mengalir secara rutin
-                  </li>
-                  <li>Menjaga jarak aman 1,5 - 2 meter dengan orang lain</li>
-                </ul>
-                <p></p>
-              </div>
-            </div>
-            <div class="d-lg-none">
-              <div
-                class="card my-3 px-3 justify-content-center"
-                style="
-                  height: 350px;
-                  border-radius: 10px;
-                  position: relative;
-                  border: none;
-                "
-              >
-                <img
-                  class="img-fluid mb-3"
-                  src="img/masker.svg"
-                  alt=""
-                  style="
-                    width: 30%;
-                    height: auto;
-                    position: absolute;
-                    top: -10px;
-                    right: 10px;
-                  "
-                />
-                <p><b>Selalu Jalankan 3M</b></p>
-                <p></p>
-                <ul>
-                  <li>Memakai masker dengan benar saat ke mana pun pergi</li>
-                  <li>
-                    Mencuci tangan dengan sabun dan air mengalir secara rutin
-                  </li>
-                  <li>Menjaga jarak aman 1,5 - 2 meter dengan orang lain</li>
-                </ul>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div
-              class="card my-3 px-3 justify-content-center"
-              style="
-                height: 250px;
-                border-radius: 10px;
-                position: relative;
-                border: none;
-              "
-            >
-              <img
-                class="img-fluid mb-3 d-none d-lg-block"
-                src="img/kantor.svg"
-                alt=""
-                style="
-                  height: auto;
-                  position: absolute;
-                  top: -20px;
-                  right: 20px;
-                "
-              />
-              <img
-                class="img-fluid mb-3 d-lg-none"
-                src="img/kantor.svg"
-                alt=""
-                style="
-                  width: 30%;
-                  height: auto;
-                  position: absolute;
-                  top: -10px;
-                  right: 10px;
-                "
-              />
-              <p><b>Maksimal 50%</b></p>
-              <p>
-                Seluruh kegiatan yang diizinkan beroperasi harus beroperasi
-                dalam kapasitas maksimal 50% dan menjalankan protokol kesehatan
-                dengan ketat.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card my-3 px-3 justify-content-center"
-              style="
-                height: 250px;
-                border-radius: 10px;
-                position: relative;
-                border: none;
-              "
-            >
-              <img
-                class="img-fluid mb-3 d-none d-lg-block"
-                src="https://corona.jakarta.go.id/img/logo/img-protokol-3.svg"
-                alt=""
-                style="
-                  height: auto;
-                  position: absolute;
-                  top: -20px;
-                  right: 20px;
-                "
-              />
-              <img
-                class="img-fluid mb-3 d-lg-none"
-                src="https://corona.jakarta.go.id/img/logo/img-protokol-3.svg"
-                alt=""
-                style="
-                  width: 30%;
-                  height: auto;
-                  position: absolute;
-                  top: -10px;
-                  right: 10px;
-                "
-              />
-              <p><b>Ingatkan Sesama</b></p>
-              <p>Saling mengingatkan untuk menjalankan protokol kesehatan</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Info Corona -->
-
-    <!-- Berita Banten -->
-    <article class="berita">
-      <div class="container">
-        <h4 class="mb-1">Berita Covid-19 Di Indonesia</h4>
-        <hr />
-        <div class="row berita-container"></div>
-      </div>
-    </article>
-
-    <!-- FAQ -->
-    <section class="pertanyaan">
-      <div class="container">
-        <div class="row m-0">
-          <div class="col-md-1"></div>
-          <div class="col-md-5" style="align-self: center">
-            <p style="font-size: 22px">Ada</p>
-            <h3>Pertanyaan?</h3>
-            <p>Cari tahu pertanyaan yang sering muncul mengenai Covid-19.</p>
-            <div class="pb-5">
-              <a href="#" class="btn btn-success" rel="noopener noreferrer"
-                >Lihat FAQ</a
-              >
-            </div>
-            <div class="d-lg-none" style="padding-bottom: 120px"></div>
-          </div>
-          <div
-            class="col-md-6 text-center"
-            style="align-self: center; position: relative"
-          >
-            <div
-              class="d-none d-lg-block"
-              style="position: absolute; top: -150px; right: -10px"
-            >
-              <img
-                src="https://corona.jakarta.go.id/img/logo/bg-dot-3.svg"
-                alt=""
-              />
-            </div>
-            <div class="d-none d-lg-block">
-              <img
-                class="img-fluid mb-3"
-                src="https://corona.jakarta.go.id/img/logo/img-faq.svg"
-                alt=""
-                style="position: absolute; bottom: -200px; left: 0px"
-              />
-            </div>
-            <div class="d-lg-none">
-              <img
-                class="img-fluid mb-3"
-                src="https://corona.jakarta.go.id/img/logo/img-faq.svg"
-                alt=""
-                style="
-                  position: absolute;
-                  width: 80%;
-                  bottom: -60px;
-                  right: 0px;
-                "
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <img src="img/blue-wave 1.svg" class="m-0 p-0" width="100%" />
-    </section>
-    <!-- Akhir FAQ -->
-
-    <footer>
-      <div class="container">
-        <div class="row mt-3 mb-4">
-          <div class="col-3 col-md-2 my-auto ml-3">
-            <img src="./img/banten.svg" class="img-fluid" width="50%" />
-          </div>
-          <div class="col-2 col-md-2">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Data</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-3 col-md-3">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Rs Rujukan </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Protocol Kesehatan</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-3 col-md-3">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Berita Banten</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-0 col-md-2"></div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-2"></div>
-          <div class="col-md-8 text-center">
-            <p>Dicodingsubmission&copy;2020BFFWD</p>
-          </div>
-          <div class="col-md-2"></div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
 </html>

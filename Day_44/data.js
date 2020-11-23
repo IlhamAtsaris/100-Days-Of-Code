@@ -11,6 +11,9 @@ fetch("https://indonesia-covid-19.mathdro.id/api/provinsi/")
     document.querySelector(".provinsi").innerHTML = provinsi;
     document.querySelector(".selesai-sembuh").innerHTML = sembuh;
     document.querySelector(".kasus-meninggal").innerHTML = meninggal;
+  })
+  .catch((error) => {
+    alert(error);
   });
 
 fetch("https://api.thevirustracker.com/free-api?countryTotal=ID")
@@ -64,4 +67,7 @@ fetch(
 
     const beritacontainer = document.querySelector(".berita-container");
     beritacontainer.innerHTML = cards;
+  })
+  .catch(() => {
+    alert("Please Allowed CORS");
   });
